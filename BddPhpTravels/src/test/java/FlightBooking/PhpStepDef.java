@@ -139,7 +139,7 @@ public class PhpStepDef {
 			 driver.findElement(By.xpath(("//body/main[1]/div[1]/div[2]/section[1]/ul[1]/li[2]/div[1]/form[1]/div[1]/div[2]/div[1]/button[1]"))).click();
 		 }
 
-    @Then("^ User should be redirected to FlightBookingPage$")
+    @Then("^User navigates to FlightBooking Page$")
 			public void FlightBookingPage() {
     	//Get the Title of FlightBookingPage
         String FlightBookingPage=driver.getTitle();
