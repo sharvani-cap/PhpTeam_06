@@ -128,12 +128,12 @@ public class PhpStepDef {
 		 driver.findElement(By.xpath("//body/main[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/fieldset[1]/div[1]/ul[1]/li[1]/div[1]/label[1]")).click();
 		
 		 }
-  @Then("^The filtered flights are displayed$")
+  @Then("^the filtered flights should be displayed$")
           public void flights_displayed()
          {
 	     } 
   
-  @When("^User click on Booknow$")
+  @When("^User click on Booknow $")
 		 public void User_click_on_Booknow() {
 	            
 			 driver.findElement(By.xpath(("//body/main[1]/div[1]/div[2]/section[1]/ul[1]/li[2]/div[1]/form[1]/div[1]/div[2]/div[1]/button[1]"))).click();
@@ -176,7 +176,7 @@ public class PhpStepDef {
 				JavascriptExecutor js1 = (JavascriptExecutor)driver;  
 		        js1.executeScript("document.getElementById(\"booking\").click();");
 			}
-	@Then("^ User should be redirected to FlightInvoicePage and click on proceed$")
+	@Then("^ User should be redirected to FlightInvoicePage$")
 	   public void invoice_page() 
 	    {
 		//Get the Title of FlightInvoicePage
@@ -194,7 +194,7 @@ public class PhpStepDef {
 	 {    //Click on proceed
 		 driver.findElement(By.xpath("//input[@id='form']")).click();
      }
-	@Then("^Booking is successful$")
+	@Then("^Booking is successfull$")
 	         public void booking_successful() 
 	 {
 		//Assertion for BookingSuccessfull
