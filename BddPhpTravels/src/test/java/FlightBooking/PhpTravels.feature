@@ -14,6 +14,7 @@ Scenario: Successfully Changed Currency 
     When User click on Currency button
     And  User Select INR Currency
     Then The Currency is  Changed Successfully 
+    
 @ParametrizedTest    
 Scenario: Successfully Search Flight 
     When User click on Flights tab       
@@ -22,13 +23,12 @@ Scenario: Successfully Search Flight 
     And User click on Search
     Then User should be redirected to flight Page
     
- Scenario: Successfully Apply filters
-    
-    When User select Direct Flight and Indigo Flights 
-    Then The filtered flights are displayed   
-    When User click on Booknow
-    
-   Then User should be redirected to FlightBooking Page.
+ Scenario: Successfully Apply filters    
+    When User select Direct Flight and Indigo Flights   
+    Then  the filtered flights should be displayed
+    When  User click on Booknow  
+    Then User navigates to FlightBooking Page
+ 
 Scenario: Traveller's Details
       When user enters the details
       And User selects the payment method
@@ -37,7 +37,7 @@ Scenario: Traveller's Details
           
 Scenario: Booking is Successfull 
       When  User click on proceed
-      Then Booking is successful                    
+      Then Booking is successful                     
 
      
 
