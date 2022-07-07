@@ -14,7 +14,6 @@ Scenario: Successfully Changed Currency 
     When User click on Currency button
     And  User Select INR Currency
     Then The Currency is  Changed Successfully 
-    
 @ParametrizedTest    
 Scenario: Successfully Search Flight 
     When User click on Flights tab       
@@ -37,7 +36,7 @@ Scenario: Traveller's Details
           
 Scenario: Booking is Successfull 
       When  User click on proceed
-      Then Booking is successful                     
+      Then Booking is successfull                       
 
      
 
