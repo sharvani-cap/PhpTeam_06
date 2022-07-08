@@ -125,7 +125,7 @@ public class PhpStepDef {
 	     //Apply Filters For FlightBooking
 		 driver.findElement(By.id("direct")).click();
 		   //Select the Type of IndigoFlight
-		 driver.findElement(By.xpath("//body/main[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/fieldset[1]/div[1]/ul[1]/li[1]/div[1]/label[1]")).click();
+		 driver.findElement(By.xpath("//body/main[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/fieldset[1]/div[1]/ul[1]/li[2]/div[1]/label[1]")).click();
 		
 		 }
   @Then("^the filtered flights should be displayed$")
@@ -136,7 +136,7 @@ public class PhpStepDef {
   @When("^User click on Booknow $")
 		 public void User_click_on_Booknow() {
 	            
-			 driver.findElement(By.xpath(("//body/main[1]/div[1]/div[2]/section[1]/ul[1]/li[2]/div[1]/form[1]/div[1]/div[2]/div[1]/button[1]"))).click();
+			 driver.findElement(By.xpath(("//body/main[1]/div[1]/div[2]/section[1]/ul[1]/li[4]/div[1]/form[1]/div[1]/div[2]/div[1]/button[1]"))).click();
 		 }
 
     @Then("^User navigates to FlightBooking Page$")
