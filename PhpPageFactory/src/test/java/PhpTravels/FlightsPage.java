@@ -10,16 +10,28 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+package PhpTravels;
+
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
 public class FlightsPage {
 
 	WebDriver driver;
   @FindBy(id="direct")
    WebElement Direct;
    
-    @FindBy(xpath="//body/main[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/fieldset[1]/div[1]/ul[1]/li[1]/div[1]/label[1]")
+    @FindBy(xpath="//body/main[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/fieldset[1]/div[1]/ul[1]/li[2]/div[1]/label[1]")
     WebElement FlightTypeDirect;
     
-    @FindBy(xpath="//body/main[1]/div[1]/div[2]/section[1]/ul[1]/li[2]/div[1]/form[1]/div[1]/div[2]/div[1]/button[1]")   
+    @FindBy(xpath="//body/main[1]/div[1]/div[2]/section[1]/ul[1]/li[4]/div[1]/form[1]/div[1]/div[2]/div[1]/button[1]") 
     WebElement BookNow;
     
     public FlightsPage(WebDriver driver) {
